@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        #container{
+            height: 2000px;
+        }
+        #container,#box1,#box2,#box3{
+            background: yellow;
+            padding: 20px;
+            border: 1px solid red;
+            margin: 50px;
+        }
+        #box1{
+            /*position: static; *!default*!*/
+            /*position: relative;*/ /*相对定位*/
+            /*top: -100px;*/
+            /*left: 0;*/
+            /*position: absolute; !*绝对定位*!*/
+            /*float: left;*/
+            /*position: fixed;*/
+            position: relative;
+            top: 100px;
+            z-index: 0; /*距离显示器Z轴*/
+        }
+        #box2{
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="box1">box1..</div>
+    <div id="box2">box2..</div>
+    <div id="box3">box3..</div>
+</div>
+</body>
+</html>

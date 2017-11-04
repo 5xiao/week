@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h1 {
+
+        }
+        .red{
+
+        }
+        #big{
+
+        }
+        h1,.red,#big{
+
+        }
+        p{
+
+        }
+        p span{
+
+        }
+        p>b{
+
+        }
+        a:hover{
+
+        }
+        div+p{
+            color: red;
+        }
+        div~p{
+            color: blue;
+        }
+        [title]{
+            color: red;
+            font-family: "Times New Roman";
+            font-size: 20px;
+        }
+        p[id][class]{
+            background: red;
+        }
+        :target{
+            font-size: 20px;
+            border: 1px solid gray;
+        }
+        div#news2:target{
+            background: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <p id="p1" class="c1">p1...</p>
+    <div>div...</div>
+    <P>p2...</P>
+    <P>p3...</P>
+    <P>p4...</P>
+    <P>p5...</P>
+    <p title="asdf">p6......</p>
+    <a href="" title="text">a...</a>
+
+    <p><a href="#news1">跳转至内容1</a></p>
+    <p><a href="#news2">跳转至内容2</a></p>
+    <a name="news1">内容1</a>
+    <div id="news2">内容2</div>
+</body>
+</html>
