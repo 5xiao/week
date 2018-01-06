@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Human(name, age, gender, married) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+        this.married = married;
+    }
+
+    var tom = new Human('Tom', 18, 'Male', false);
+    var jerry = new Human('Jerry', 19, 'Female', true);
+
+    tom.tel= 130123456;
+    console.log(tom.tel);
+
+    jerry.getname=function () {
+        console.log(this.name)
+    };
+
+    jerry.getname();
+</script>
+</body>
+</html>

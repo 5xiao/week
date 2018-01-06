@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Student(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    Student.prototype.school = 'THU';
+    var tom = new Student('Tom', 20);
+    console.log(tom.school); // 1.THU
+    Object.getPrototypeOf(tom).school = 'PKU';
+    var jerry = new Student('Jerry', 21);
+    console.log(jerry.school); // 2.PKU
+    console.log(tom.hasOwnProperty('name')); // 3.ture
+    console.log(jerry.hasOwnProperty('school')); // 4.false
+</script>
+</body>
+</html>

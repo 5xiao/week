@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Shape() {
+        this.p1 = '形状';
+    }
+
+    function _2DShape() {
+        this.p2 = '二维图形';
+    }
+
+    function Circle(radius) {
+        this.raduis = radius;
+        this.getArea = function () {
+            console.log(2 * Math.PI * this.raduis);
+        }
+    }
+
+    var c1 = new Circle(1.23);
+    c1.getArea();
+
+    console.log(c1.p2);
+
+    _2DShape.prototype = new Shape();  //先后顺序
+    Circle.prototype = new _2DShape();
+
+    var c2 = new Circle(4.56);
+    c2.getArea();
+    console.log(c2.p2);
+
+    var c3 = new Circle(7.89);
+    c3.getArea();
+    console.log(c3.p1);
+
+
+</script>
+</body>
+</html>
