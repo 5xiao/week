@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--2 viewprot-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <!--3 x-ua-compatible-->
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title>Title</title>
+    <!--4 引入两个兼容文件-->
+    <!--[if lt IE 9]-->
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <!--6 引入 bootstrap.css-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+<button>click..</button>
+<pre>
+    jQuery
+
+    selector
+        Selector 选择器
+    action
+        Events 事件
+        Effects 效果
+        HTML DOM 操作
+        Traversing HTML 遍历
+        jQuery 插件
+</pre>
+<!--5 引入jquery,bootstrap js-->
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $('button').click(function () {
+            $('pre').toggle();
+        });
+    })
+</script>
+</body>
+</html>

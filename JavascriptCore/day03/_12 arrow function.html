@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+//    setInterval(()=>{
+//        console.log('arrow...');
+//    },1000)
+    function foo(x) {
+        return x;
+    }
+
+    let bar = x => x;
+    console.log(foo(1));
+    console.log(bar(2));
+
+    function demo1() {
+        return {k1:'v1',k2:'v2'};
+    }
+    console.log(demo1());
+    let demo = ()=> ({k1:'v1',k2:'v2'});
+    console.log(demo());
+</script>
+</body>
+</html>

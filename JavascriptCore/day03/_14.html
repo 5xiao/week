@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // class 类
+    // constructor 构造器
+    // extends 继承
+    // super 父类型
+    // 语法糖
+    class Emp {
+        constructor(name){
+            this.name = name;
+        }
+        work(){
+            return `NAME: ${this.name}`;
+        }
+    }
+    class Programmer extends Emp { //  Programmer.prototype = new Emp();
+        constructor (name, skill){
+            super(name);
+            this.skill = skill;
+        }
+        work() { // Override
+            return super.work() + ` SKILL: ${this.skill}`;
+        }
+    }
+    function Employee(name) {
+        this.name = name;
+        this.work = function () {
+            return 'NAME: ' + this.name;
+        }
+    }
+    let tom = new Emp('Tom');
+    console.log(tom.work());
+    let jerry = new Programmer('Jerry', 'JavaScript');
+    console.log(jerry.work());
+</script>
+</body>
+</html>
